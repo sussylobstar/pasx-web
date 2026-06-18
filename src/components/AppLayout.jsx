@@ -5,7 +5,7 @@ import BottomNav from './BottomNav'
 import ThemeToggle from './ThemeToggle'
 import Logo from './Logo'
 import Avatar from './Avatar'
-import Icon from './icons'
+import NotificationsMenu from './NotificationsMenu'
 import { useAuth } from '../context/AuthContext'
 
 export default function AppLayout() {
@@ -18,7 +18,7 @@ export default function AppLayout() {
 
       <div className="lg:pl-[260px]">
         {/* Top bar */}
-        <header className="theme-tween sticky top-0 z-20 border-b border-line bg-bg/80 backdrop-blur-xl">
+        <header className="theme-tween sticky top-0 z-40 border-b border-line bg-bg/80 backdrop-blur-xl">
           <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-4 sm:px-6">
             <div className="lg:hidden">
               <Logo size={28} />
@@ -29,15 +29,7 @@ export default function AppLayout() {
             </div>
 
             <div className="flex items-center gap-2">
-              <button
-                aria-label="Notifications"
-                className="relative grid h-10 w-10 place-items-center rounded-xl border border-line
-                  bg-surface text-ink transition-colors duration-200 ease-out-strong hover:bg-surface-2
-                  active:scale-95 focus-ring"
-              >
-                <Icon.Bell width={19} height={19} />
-                <span className="absolute right-2.5 top-2.5 h-2 w-2 rounded-full bg-accent ring-2 ring-surface" />
-              </button>
+              <NotificationsMenu />
               <ThemeToggle />
               <div className="hidden sm:block lg:hidden">
                 <Avatar user={user} size={36} />

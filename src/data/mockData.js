@@ -90,6 +90,51 @@ export const notifications = {
   weeklySummary: true,
 }
 
+// Notification feed shown in the header bell dropdown.
+// `kind` drives the icon + tint in the NotificationsMenu component.
+export const notificationFeed = [
+  {
+    id: 'n1',
+    kind: 'received',
+    title: 'Money received',
+    body: 'You received $4,200.00 from Helio Labs Ltd',
+    time: '2 min ago',
+    unread: true,
+  },
+  {
+    id: 'n2',
+    kind: 'kyc',
+    title: 'Identity verified',
+    body: 'Your KYC verification is complete. You now have full access.',
+    time: '1 hour ago',
+    unread: true,
+  },
+  {
+    id: 'n3',
+    kind: 'security',
+    title: 'New login detected',
+    body: 'A new login was detected from Lagos, Nigeria.',
+    time: '3 hours ago',
+    unread: false,
+  },
+  {
+    id: 'n4',
+    kind: 'sent',
+    title: 'Payment sent',
+    body: 'Your payment of $10.99 to Spotify Premium was successful.',
+    time: 'Yesterday',
+    unread: false,
+  },
+  {
+    id: 'n5',
+    kind: 'system',
+    title: 'Welcome to PASX',
+    body: 'Your account is set up and ready to use.',
+    time: '3 days ago',
+    unread: false,
+  },
+]
+
 export const formatMoney = (value, currency = 'USD') => {
   const sign = value < 0 ? '-' : ''
   const abs = Math.abs(value)
