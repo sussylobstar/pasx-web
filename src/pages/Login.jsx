@@ -83,9 +83,6 @@ export default function Login() {
         </Link>
       </p>
 
-      <p className="mt-6 rounded-xl border border-line bg-surface-2 px-3.5 py-2.5 text-center text-[12.5px] text-ink-3">
-        Demo: credentials are prefilled — just press <span className="font-semibold text-ink-2">Log in</span>.
-      </p>
     </AuthShell>
   )
 }
