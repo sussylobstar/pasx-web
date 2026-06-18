@@ -8,16 +8,15 @@ export default function AuthShell({ children, title, subtitle }) {
     <div className="flex min-h-screen bg-bg">
       {/* Brand panel */}
       <div className="relative hidden w-[46%] overflow-hidden lg:block">
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              'radial-gradient(120% 120% at 0% 0%, #D9003E 0%, #A6002F 42%, #5C001A 100%)',
-          }}
+        {/* Full-cover background image */}
+        <img
+          src="/auth-bg.jpg"
+          alt=""
+          aria-hidden
+          className="absolute inset-0 h-full w-full object-cover object-center"
         />
-        {/* soft decorative glows */}
-        <div className="absolute -left-24 top-24 h-80 w-80 rounded-full bg-white/10 blur-3xl" />
-        <div className="absolute bottom-10 right-0 h-72 w-72 rounded-full bg-black/20 blur-3xl" />
+        {/* Dark overlay keeps the white text readable */}
+        <div className="absolute inset-0" style={{ background: 'rgba(0, 0, 0, 0.45)' }} />
 
         <div className="relative flex h-full flex-col justify-between p-12 text-white">
           <Logo size={34} />
