@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import PageHeader from '../components/PageHeader'
 import Card from '../components/Card'
@@ -24,7 +25,8 @@ function InfoRow({ icon: IconCmp, label, value }) {
 }
 
 export default function Profile() {
-  const { user, updateUser } = useAuth()
+  const { user, updateUser, logout } = useAuth()
+  const navigate = useNavigate()
   const [editing, setEditing] = useState(false)
   const [draft, setDraft] = useState({
     firstName: user.firstName,
@@ -173,6 +175,20 @@ export default function Profile() {
               </div>
             </div>
           </Card>
+
+          {/* Log out — works on every screen size (sidebar is hidden on mobile) */}
+          <Button
+            variant="secondary"
+            full
+            size="lg"
+            onClick={() => {
+              logout()
+              navigate('/login')
+            }}
+            className="!text-danger hover:!bg-danger-soft"
+          >
+            <Icon.Logout width={18} height={18} /> Log out
+          </Button>
         </div>
       </div>
     </div>
