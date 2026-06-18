@@ -51,10 +51,28 @@ export default function AuthShell({ children, title, subtitle }) {
 
       {/* Form pane */}
       <div className="flex flex-1 flex-col">
-        <div className="flex items-center justify-between p-5 sm:p-6">
-          <div className="lg:hidden">
-            <Logo />
+        {/* Mobile branded banner — only below lg; desktop uses the left panel instead */}
+        <div className="relative h-[200px] w-full overflow-hidden lg:hidden">
+          <img
+            src="/auth-bg.jpg"
+            alt=""
+            aria-hidden
+            className="absolute inset-0 h-full w-full object-cover object-center"
+          />
+          <div className="absolute inset-0" style={{ background: 'rgba(0, 0, 0, 0.45)' }} />
+          <div className="absolute right-5 top-5 z-10">
+            <ThemeToggle />
           </div>
+          <div className="absolute inset-x-0 bottom-0 p-6">
+            <Logo size={32} inverted />
+            <p className="mt-2 max-w-xs text-[14px] font-medium leading-snug text-white/85">
+              Money that moves at the speed of the internet.
+            </p>
+          </div>
+        </div>
+
+        {/* Desktop top bar — unchanged */}
+        <div className="hidden items-center justify-between p-5 sm:p-6 lg:flex">
           <div className="ml-auto">
             <ThemeToggle />
           </div>

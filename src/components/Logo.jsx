@@ -1,4 +1,4 @@
-export default function Logo({ size = 32, showWordmark = true, className = '' }) {
+export default function Logo({ size = 32, showWordmark = true, inverted = false, className = '' }) {
   return (
     <div className={`flex items-center gap-2.5 ${className}`}>
       <span
@@ -9,7 +9,9 @@ export default function Logo({ size = 32, showWordmark = true, className = '' })
         P
       </span>
       {showWordmark && (
-        <span className="text-[19px] font-extrabold tracking-tight text-ink">
+        <span
+          className={`text-[19px] font-extrabold tracking-tight ${inverted ? 'text-white' : 'text-ink'}`}
+        >
           PAS<span className="text-accent">X</span>
         </span>
       )}
