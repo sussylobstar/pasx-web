@@ -2,7 +2,6 @@ import { NavLink, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { navItems } from './navItems'
 import { useAuth } from '../context/AuthContext'
-import Logo from './Logo'
 import Avatar from './Avatar'
 import Icon from './icons'
 import StatusBadge from './StatusBadge'
@@ -15,7 +14,7 @@ export default function Sidebar() {
   return (
     <aside className="theme-tween fixed inset-y-0 left-0 z-30 hidden w-[260px] flex-col border-r border-line bg-surface px-4 py-6 lg:flex">
       <div className="px-2">
-        <Logo />
+        <img src="/pasx-logo.png" alt="PASX" className="h-8 w-auto" />
       </div>
 
       <nav className="mt-8 flex flex-1 flex-col gap-1">

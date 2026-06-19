@@ -8,7 +8,7 @@ export default function Avatar({ user, size = 40, className = '' }) {
         width: size,
         height: size,
         fontSize: size * 0.4,
-        background: 'linear-gradient(135deg, #D9003E 0%, #8A0027 100%)',
+        background: 'linear-gradient(135deg, #0057D9 0%, #003FA3 100%)',
       }}
       aria-hidden
     >

@@ -7,11 +7,11 @@ export default {
       colors: {
         // Brand accent
         accent: {
-          DEFAULT: '#D9003E',
-          hover: '#BF0036',
-          active: '#A6002F',
-          soft: 'rgba(217, 0, 62, 0.10)',
-          softer: 'rgba(217, 0, 62, 0.06)',
+          DEFAULT: '#0057D9',
+          hover: '#003FA3',
+          active: '#002E7A',
+          soft: 'rgba(0, 87, 217, 0.10)',
+          softer: 'rgba(0, 87, 217, 0.06)',
         },
         // Semantic surfaces driven by CSS variables so light/dark transitions are smooth
         bg: 'rgb(var(--bg) / <alpha-value>)',
@@ -35,7 +35,7 @@ export default {
       boxShadow: {
         card: '0 1px 2px rgba(10, 10, 15, 0.04), 0 1px 3px rgba(10, 10, 15, 0.06)',
         'card-hover': '0 4px 12px rgba(10, 10, 15, 0.08), 0 2px 4px rgba(10, 10, 15, 0.06)',
-        glow: '0 8px 30px rgba(217, 0, 62, 0.28)',
+        glow: '0 8px 30px rgba(0, 87, 217, 0.28)',
       },
       transitionTimingFunction: {
         'out-strong': 'cubic-bezier(0.23, 1, 0.32, 1)',

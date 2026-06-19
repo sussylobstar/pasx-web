@@ -3,7 +3,7 @@
 A Revolut-inspired fintech web app for the PASX platform. Single-page application with
 client-side routing, full light/dark mode, and realistic dummy data throughout.
 
-**Brand accent:** `#D9003E`
+**Brand accent:** `#0057D9`
 
 ## Stack
 

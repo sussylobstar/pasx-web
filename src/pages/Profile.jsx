@@ -52,7 +52,7 @@ export default function Profile() {
       <Card className="overflow-hidden" padded={false}>
         <div
           className="h-24 w-full"
-          style={{ background: 'linear-gradient(120deg, #D9003E, #7A0023)' }}
+          style={{ background: 'linear-gradient(120deg, #0057D9, #002E7A)' }}
         />
         <div className="px-5 pb-5 sm:px-6">
           <div className="-mt-10 flex items-end justify-between">

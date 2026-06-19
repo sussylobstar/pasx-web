@@ -18,7 +18,7 @@ export default function BalanceCard({ user, actions = true }) {
       className="relative overflow-hidden rounded-3xl p-6 text-white shadow-glow sm:p-7"
       style={{
         background:
-          'linear-gradient(135deg, #D9003E 0%, #B30033 46%, #7A0023 100%)',
+          'linear-gradient(135deg, #0057D9 0%, #003FA3 46%, #002E7A 100%)',
       }}
     >
       {/* decorative glow */}
