@@ -9,7 +9,7 @@ import { useAuth } from '../context/AuthContext'
 export default function Login() {
   const { login } = useAuth()
   const navigate = useNavigate()
-  const [email, setEmail] = useState('amara.okafor@gmail.com')
+  const [email, setEmail] = useState('patrick.adeel@gmail.com')
   const [password, setPassword] = useState('password123')
   const [loading, setLoading] = useState(false)
 

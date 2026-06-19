@@ -60,7 +60,7 @@ export default function Register() {
           id="fullName"
           label="Full name"
           icon={Icon.User}
-          placeholder="Amara Okafor"
+          placeholder="Patrick Adeel"
           autoComplete="name"
           value={form.fullName}
           onChange={set('fullName')}

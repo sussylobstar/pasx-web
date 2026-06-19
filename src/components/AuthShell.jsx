@@ -19,7 +19,7 @@ export default function AuthShell({ children, title, subtitle }) {
         <div className="absolute inset-0" style={{ background: 'rgba(0, 0, 0, 0.45)' }} />
 
         <div className="relative flex h-full flex-col justify-between p-12 text-white">
-          <img src="/pasx-logo.png" alt="PASX" className="h-12 w-auto" />
+          <img src="/pasx-logo.png" alt="PASX" className="h-9 w-auto object-contain" />
           <div>
             <motion.h2
               initial={{ opacity: 0, y: 14 }}

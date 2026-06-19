@@ -3,10 +3,10 @@
 // ---------------------------------------------------------------------------
 
 export const currentUser = {
-  firstName: 'Amara',
-  lastName: 'Okafor',
-  fullName: 'Amara Okafor',
-  email: 'amara.okafor@gmail.com',
+  firstName: 'Patrick',
+  lastName: 'Adeel',
+  fullName: 'Patrick Adeel',
+  email: 'patrick.adeel@gmail.com',
   phone: '+44 7700 900812',
   country: 'United Kingdom',
   memberSince: 'March 2024',
